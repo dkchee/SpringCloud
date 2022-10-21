@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dkchee/SpringCloud
+          default-label: dev
+        bootstrap: false
+  profiles:
+    active: dev
+  application:
+    name: cloud-eureka-server
